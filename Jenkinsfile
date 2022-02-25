@@ -12,8 +12,8 @@ pipeline {
                 
                
                 sh 'git add .'
-                sh 'git tag -a ${next_version} -m "Your tag comment'
-                sh 'git commit -m "Updated tag and version'
+                sh '''git tag -a ${next_version} -m "Your tag comment"'''
+                sh '''git commit -m "Updated tag and version"'''
                 sh 'git push'
             }
         }
