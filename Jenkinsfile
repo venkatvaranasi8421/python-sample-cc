@@ -10,9 +10,9 @@ pipeline {
                 echo "Current version of App:: ${current_version}"
               echo "Next Version of App:: ${next_version}"
                 
-                git url: "https://github.com/venkatvaranasi8421/python-sample-cc",
+                sh 'git url: "https://github.com/venkatvaranasi8421/python-sample-cc",
                     credentialsId: 'SemVerPOC_2',
-                    branch: main
+                    branch: main'
                 sh 'git add .'
                 sh 'git tag -a ${next_version} -m "Your tag comment"'
                 sh 'git commit -m "Updated tag and version'
