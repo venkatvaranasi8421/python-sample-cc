@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment { 
-        next_version = nextVersion()
+        next_version = nextVersion(writeVersion: true)
     }
     stages {
         stage ('Build') {
