@@ -14,7 +14,7 @@ pipeline {
                 sh 'git add .'
                 sh '''git tag -a ${next_version} -m "Your tag comment"'''
                 sh '''git commit -m "Updated tag and version"'''
-                sh '''git push https://venkatvaranasi8421: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@github.com/venkatvaranasi8421/python-sample-cc HEAD:main'''
+                sh '''git push https://venkatvaranasi8421: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@github.com/venkatvaranasi8421/python-sample-cc HEAD:main'''
             }
         }
      
